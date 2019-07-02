@@ -22,20 +22,22 @@ Example script syncs notes to a folder under Home/Dropbox called "kindle-notes-b
 
 ## Istallation
 
-1. Clone this repo within your intended backup directory.
+1. Clone this repo within your intended backup directory.  
 
-2. Determine the vendor and product ID for your Kindle device. Run:  
+2. In all three files, find and replace $USER with your username
+
+3. Determine the vendor and product ID for your Kindle device. Run:  
   ```lsusb```
   
-  In the output, you should see a line with something like this: 
-  > Bus 001 Device 016: ID 1949:0004 Lab126, Inc. Amazon Kindle 3/4/Paperwhite
+  In the output, you should see a line with something like this:  
+  > Bus 001 Device 016: ID 1949:0004 Lab126, Inc. Amazon Kindle 3/4/Paperwhite  
   
-  In this case 1949 would be the Vendor ID, and 0004 would be the Product ID.
+  In this case 1949 would be the Vendor ID, and 0004 would be the Product ID.  
   
-3. Update the file 100-kindle-mount.rules with your own Vendor and Product IDs
+4. Update the file 100-kindle-mount.rules with your own Vendor and Product IDs  
 
-4. Copy the file into the system udev rules:  
-  ```cp 100-kindle-mount.rules /etc/udev/rules.d/```
+5. Copy the file into the system udev rules:  
+  ```cp 100-kindle-mount.rules /etc/udev/rules.d/```  
 
 
-Now you should get a notification that the script is activated when you mount your Kindle, and a file called My Clippings.txt will appear in the target directory. 
+Now you should get a notification that the script is activated when you mount your Kindle, and a file called My Clippings.txt will appear in the target directory.  
