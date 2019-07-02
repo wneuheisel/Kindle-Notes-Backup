@@ -20,7 +20,7 @@ Example script syncs notes to a folder under Home/Dropbox called "kindle-notes-b
 
 
 
-## Istallation
+## Installation
 
 1. Clone this repo within your intended backup directory.  
 
