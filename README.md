@@ -11,7 +11,14 @@ This is tested only on Ubuntu 18.04 with GNOME Shell.
 Requires at:  
 ```sudo apt install at```
 
-Example script syncs notes to a folder under Home/Dropbox called "kindle-notes-backup", so you'll have to create that folder, or change it to whatever you like.  And make sure to initiate git in that directory.
+Example script syncs notes to a folder under Home/Dropbox called "kindle-notes-backup", so you'll have to create that folder, or change it to whatever you like.  Make sure to initiate git in that directory, and you'll probably want something like this in your .gitignore file:
+
+>/script  
+>*.sh  
+>.gitignore  
+>*~  
+
+
 
 ## Istallation
 
