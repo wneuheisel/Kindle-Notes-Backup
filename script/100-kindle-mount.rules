@@ -1,1 +1,0 @@
-ACTION=="add", DRIVER=="usb-storage", ATTRS{idVendor}=="1949", ATTRS{idProduct}=="0004", ATTRS{serial}=="G090G10574960D11", RUN+="/home/$USER/Dropbox/kindle-notes-backup/script/sch_bak.sh"
