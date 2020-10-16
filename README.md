@@ -1,5 +1,5 @@
 # Kindle-Notes-Backup
-Bash script that automatically syncs and commits Kindle notes to a git repo when Kindle is mounted on USB
+Linux bash script that automatically syncs and commits Kindle notes to a git repo when Kindle is mounted on USB
 
 I am far from a bash expert, so any advice on improvements would be welcome.
 
