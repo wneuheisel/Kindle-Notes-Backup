@@ -21,7 +21,7 @@ if [ "$?" = "1" ]; then
 	exit 1
 fi
 
-if [ -z "$(git status --porcelain)" ]; then 
+if [ -z "$(su $USER -c 'git status --porcelain')" ]; then 
 	su $USER -c 'notify-send -i document-save -c transfer "Git" "No changes in Kindle Notes"'
 	exit 0
 else
